@@ -1,0 +1,17 @@
+<h2>Lista de Pessoa</h2>
+
+<ul>
+    <li>
+        <!--two-way data binding -->
+        <input type="text" [(ngModel)]="nome">
+        <button type="button" class="btn btn-success" (click)="enviarNome()">Enviar nome</button>
+        <!-- Interpolation -->
+        <p>{{nome}}</p>
+    </li>
+    <!-- diretiva estrutural -->
+    <li *ngFor="let pessoa of pessoas">
+        {{pessoa}}
+    </li>
+    <!-- Event binding -->
+  <button type="button" (click)="alertaMsg()" class="btn btn-primary">Enviar alerta</button>
+</ul>
