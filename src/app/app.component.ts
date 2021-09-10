@@ -10,6 +10,8 @@ import { AlertaService } from './alerta.service';
 export class AppComponent {
   title = 'Angular 2'; /* Interpolation */
   foto: string = 'favicon.ico'; /* Property binding */
+  desenvolvimento: string [] = ['Angular 2', 'JavaScript', 'TypeScript', 'HTML', 'CSS'];
+  valor: string = '';
 
   // Injetando dependência
   constructor(private service: AlertaService){ }
@@ -21,5 +23,8 @@ export class AppComponent {
   msgAlerta(): void{
     alert('Livro Angular 2');
   }
-}
 
+  valorPassado(valorPassado: any) {
+    this.valor = valorPassado;
+  }
+}

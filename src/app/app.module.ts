@@ -12,6 +12,7 @@ import { NgSwitchCaseComponent } from './ng-switch-case/ng-switch-case.component
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { InputOutputComponent } from './input-output/input-output.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     NgForComponent,
     NgContentComponent,
     EventBindingComponent,
+    InputOutputComponent,
   ],
   imports: [
     BrowserModule,
